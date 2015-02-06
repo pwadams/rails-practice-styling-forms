@@ -25,11 +25,13 @@
 </div>
 
   <div class="form-group">
-    <%= f.label :date_of_birth %><br>
-    <%= f.date_select :date_of_birth %>
+    <%= f.label :date_of_birth, class: "col-sm-2 control-label" %>
+    <div class= "col-sm-6"> <%= f.date_field :date_of_birth, class:"form-control" %>
   </div>
+</div>
+
   <div class="form-group">
-    <%= f.label :bio %><br>
+    <%= f.label :bio %>
     <%= f.text_area :bio %>
   </div>
   <div class="form-group">
